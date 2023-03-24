@@ -1,7 +1,6 @@
-function PokemonCard({pokemon}) {
-    console.log(pokemon);
+function PokemonCard({pokemon, handleClick}) {
     return (
-        <article>
+        <article onClick={() => handleClick(pokemon)}>
             <p>{pokemon.name}</p>
         </article>
     )
